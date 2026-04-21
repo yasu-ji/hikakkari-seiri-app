@@ -17,9 +17,7 @@
       --shadow: 0 10px 30px rgba(22, 34, 51, 0.08);
       --radius: 18px;
     }
-
     * { box-sizing: border-box; }
-
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Yu Gothic", sans-serif;
@@ -27,35 +25,27 @@
       color: var(--text);
       line-height: 1.7;
     }
-
     .wrap {
       max-width: 860px;
       margin: 0 auto;
       padding: 24px 16px 48px;
     }
-
-    .hero {
-      margin-bottom: 18px;
-    }
-
+    .hero { margin-bottom: 18px; }
     .eyebrow {
       font-size: 13px;
       color: var(--sub);
       margin-bottom: 6px;
     }
-
     h1 {
       margin: 0;
       font-size: clamp(28px, 4vw, 40px);
       line-height: 1.2;
     }
-
     .lead {
       color: var(--sub);
       margin: 10px 0 18px;
       font-size: 16px;
     }
-
     .progress-track {
       width: 100%;
       height: 10px;
@@ -64,14 +54,12 @@
       overflow: hidden;
       margin-bottom: 18px;
     }
-
     .progress-bar {
       height: 100%;
       width: 25%;
       background: linear-gradient(90deg, #5b8cff, var(--accent));
       transition: width 0.25s ease;
     }
-
     .card {
       background: var(--card);
       border: 1px solid var(--line);
@@ -79,26 +67,21 @@
       box-shadow: var(--shadow);
       padding: 22px;
     }
-
     .step-title {
       margin: 0 0 6px;
       font-size: 24px;
     }
-
     .step-desc {
       margin: 0 0 20px;
       color: var(--sub);
       font-size: 15px;
     }
-
     .options-grid {
       display: grid;
       gap: 12px;
     }
-
     .grid-3 { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); }
     .grid-2 { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
-
     .option-btn {
       border: 1px solid var(--line);
       background: #fff;
@@ -110,23 +93,17 @@
       font-size: 16px;
       transition: 0.18s ease;
     }
-
     .option-btn:hover {
       border-color: #b8cae5;
       transform: translateY(-1px);
     }
-
     .option-btn.active {
       background: var(--accent-soft);
       border-color: var(--accent);
       color: #1b4db8;
       font-weight: 600;
     }
-
-    .slider-wrap {
-      padding: 10px 4px;
-    }
-
+    .slider-wrap { padding: 10px 4px; }
     .slider-labels {
       display: flex;
       justify-content: space-between;
@@ -135,12 +112,10 @@
       font-size: 13px;
       margin-bottom: 14px;
     }
-
     input[type="range"] {
       width: 100%;
       accent-color: var(--accent);
     }
-
     .level-box {
       margin-top: 22px;
       padding: 24px;
@@ -148,20 +123,17 @@
       border-radius: 20px;
       text-align: center;
     }
-
     .level-number {
       font-size: 48px;
       font-weight: 700;
       line-height: 1;
     }
-
     .badges {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
       margin-bottom: 14px;
     }
-
     .badge {
       background: #eef3fa;
       color: #405166;
@@ -169,42 +141,33 @@
       padding: 8px 12px;
       font-size: 14px;
     }
-
-    .result-box,
-    .rule-box,
-    .note-box {
+    .result-box, .rule-box, .note-box {
       border-radius: 20px;
       padding: 18px;
       margin-top: 14px;
     }
-
     .result-box {
       background: #fff;
       border: 1px solid var(--line);
     }
-
     .result-box h2 {
       margin: 0 0 10px;
       font-size: 24px;
       line-height: 1.4;
     }
-
     .rule-box {
       background: var(--dark);
       color: #fff;
     }
-
     .rule-box .label {
       color: #c6d6f2;
       font-size: 13px;
       margin-bottom: 6px;
     }
-
     .note-box {
       background: #f4f7fb;
       color: #4e5d71;
     }
-
     .controls {
       display: flex;
       justify-content: space-between;
@@ -212,14 +175,11 @@
       gap: 12px;
       margin-top: 24px;
     }
-
-    .controls-left,
-    .controls-right {
+    .controls-left, .controls-right {
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
     }
-
     .btn {
       border: 1px solid var(--line);
       background: #fff;
@@ -230,21 +190,17 @@
       font-size: 15px;
       transition: 0.18s ease;
     }
-
     .btn:hover { transform: translateY(-1px); }
-
     .btn-primary {
       background: var(--accent);
       color: #fff;
       border-color: var(--accent);
     }
-
     .btn:disabled {
       opacity: 0.45;
       cursor: not-allowed;
       transform: none;
     }
-
     .next-card {
       margin-top: 18px;
       border: 1px dashed #c7d5e9;
@@ -253,7 +209,6 @@
       padding: 18px;
       color: var(--sub);
     }
-
     @media (max-width: 640px) {
       .card { padding: 18px; }
       .step-title { font-size: 22px; }
@@ -321,37 +276,44 @@
       ignored: {
         title: '今日は「見てもらえなかった感じ」が残っているのかもしれません',
         body: '怒りそのものより、雑に扱われた感じや、しんどさを見過ごされた感覚が強い日かもしれません。',
-        rule: '今日は「怒っている」より先に、「ちゃんと見てほしかった」がないかを見てみる。'
+        rule: '今日は「怒っている」より先に、「ちゃんと見てほしかった」がないかを見てみる。',
+        tip: '対策ヒント：今日は相手を変えるより、「見てもらえなかった感じ」を言葉にして切り分ける。'
       },
       unfairness: {
         title: '今日は「筋が通っていない感じ」に削られているのかもしれません',
         body: '相手個人というより、偏りや不公平さに強く反応している日かもしれません。',
-        rule: '相手への怒りと、状況の理不尽さへの反応を分けてみる。'
+        rule: '相手への怒りと、状況の理不尽さへの反応を分けてみる。',
+        tip: '対策ヒント：今日の出来事だけでなく、「またこれか」が重なっていないかを見る。'
       },
       couldnt_say: {
         title: '今日は「言えなかった悔しさ」が残っているのかもしれません',
         body: '相手への怒りと同じくらい、自分の飲み込み方にしんどさが残っていることがあります。',
-        rule: '相手への怒りと、自分へのがっかりを別々に見る。'
+        rule: '相手への怒りと、自分へのがっかりを別々に見る。',
+        tip: '対策ヒント：相手への怒りより先に、「本当は何を言いたかったか」を1行だけ残してみる。'
       },
       imbalance: {
         title: '今日は「自分ばかり抱えている感じ」が残っているのかもしれません',
         body: '負担の偏りや、見えない持ち帰りが積み重なっている日かもしれません。',
-        rule: '今日は全部を一人で抱えず、「どこまで自分の分か」を区切ってみる。'
+        rule: '今日は全部を一人で抱えず、「どこまで自分の分か」を区切ってみる。',
+        tip: '対策ヒント：今日の仕事を「自分の分」と「本当は抱えなくていい分」に分けてみる。'
       },
       tone: {
         title: '今日は「言い方の刺さり」が残っているのかもしれません',
         body: '内容よりも、言い方や空気で気持ちが削られていることがあります。',
-        rule: '言われた内容と、刺さった言い方を分けてみる。'
+        rule: '言われた内容と、刺さった言い方を分けてみる。',
+        tip: '対策ヒント：今つらいのが内容なのか、言い方なのかを分けるだけでも少し違います。'
       },
       home_overlap: {
         title: '今日は「家のこととの重なり」で残りやすい日かもしれません',
         body: '仕事の出来事だけでなく、家の心配が重なると気持ちは長引きやすくなります。',
-        rule: '今日は解決より、「長引かせない」を優先してもいい日にする。'
+        rule: '今日は解決より、「長引かせない」を優先してもいい日にする。',
+        tip: '対策ヒント：今日は答えを出す日ではなく、負担を増やさない日にしても大丈夫です。'
       },
       default: {
         title: '今日は気持ちを整理するだけでも十分です',
         body: '感情をなくすより、今どこに残っているかを言葉にできるだけでも違います。',
-        rule: '今は答えを出すより、「何が残っているか」を見る。'
+        rule: '今は答えを出すより、「何が残っているか」を見る。',
+        tip: '対策ヒント：まずは整理できたこと自体を今日の一区切りにする。'
       }
     };
 
@@ -404,7 +366,6 @@
     function renderOptions(items, activeValue, onSelect, colsClass) {
       const wrap = document.createElement('div');
       wrap.className = `options-grid ${colsClass}`;
-
       items.forEach(item => {
         const btn = document.createElement('button');
         btn.className = 'option-btn' + (activeValue === item.id ? ' active' : '');
@@ -415,7 +376,6 @@
         };
         wrap.appendChild(btn);
       });
-
       return wrap;
     }
 
@@ -475,6 +435,10 @@
         <div class="rule-box">
           <div class="label">今日の小さな自分ルール</div>
           <div>${selected.rule}</div>
+        </div>
+        <div class="result-box">
+          <div style="color:#5f6b7a; font-size:13px; margin-bottom:6px;">タイプ別の対策ヒント</div>
+          <div>${selected.tip}</div>
         </div>
         <div class="note-box">
           今は答えを急がなくても大丈夫です。まずは「何が残っているか」が見えただけでも、今日の整理としては十分です。
